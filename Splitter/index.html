@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPLITTER - Divisor de Conta</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        SPLI <br>
+        TTER
+    </header>
+    <main>
+        <div class="cardprincipal">
+            <div class="divisoes div1">
+                <label for="">Conta</label>
+                <input class="bill" type="number" placeholder="0" name="" id="bill" value="">
+                <label for="">Selecione % Gorgeta (p/ pessoa)</label>
+                <div class="tips">
+                    <input class="porcent" type="button" value="5">
+                    <input class="porcent" type="button" value="10">
+                    <input class="porcent" type="button" value="15">
+                    <input class="porcent" type="button" value="20">
+                    <input class="porcent" type="button" value="25">
+                    <input class="porcent" type="number" value="" placeholder="Custom">
+                </div>
+                <label for="">N° de pessoas</label>
+                <input class="bill" type="number" placeholder="0" name="" id="numberOfPeople">
+            </div>
+            <input type="button" value="=" onclick="calculaTotal()" id="btnCalcula" class="btnCalc">
+            <div class="divisoes div2">
+                <div class="sumario">
+                <div class="amount">
+                    <p>Subtotal:</p>
+                    <p class="person">\pessoa</p>
+                    <p class="price">
+                    <p id="precoReal">R$ 0</p>
+                    </p>
+                    
+                </div>
+                <div class="amount">
+                    <p>Gorgeta</p>
+                    <p class="person">\pessoa</p>
+                    <p class="price">
+                        <p id="precoRealGorgeta">R$ 0</p>
+                    </p>
+                </div>
+              
+               
+
+                </div>
+                <div class="reset">
+                    <input class="resetbtn" type="button" value="RESET" onclick="limpaValores()">
+                    <div class="valorFinal" id="valorFinal">
+                        <p>Total p/ pessoa: R$</p><span class="ultimoValor" id="ultimoValor">0</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
