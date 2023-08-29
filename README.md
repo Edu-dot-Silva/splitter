@@ -1,7 +1,7 @@
 # splitter
 uma aplicação web simples que permite dividir a conta de um restaurante entre várias pessoas, considerando a gorjeta.
 
-Visão Geral
+Visão Geral:
 O projeto consiste em uma página web que permite ao usuário inserir o valor total da conta, selecionar a porcentagem da gorjeta e o número de pessoas. A aplicação então calcula o valor da gorjeta por pessoa, o subtotal por pessoa e o valor total a ser pago por pessoa, considerando a divisão igualitária.
 
 Funcionalidades:
